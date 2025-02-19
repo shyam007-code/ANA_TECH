@@ -1,3 +1,4 @@
+package src;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -58,17 +59,17 @@ public class Main_app {
 	}
 	private static void initialize_Departments() {
 		Departments dep1 =new FINANCE();  //subfields and department class 
-		dep1.addsubfield(new subfield("subfield 1"));
-		dep1.addsubfield(new subfield("subfield 2"));
-		dep1.addsubfield(new subfield("subfield 2"));
+		dep1.addsubfield(new subfield("accounts"));
+		dep1.addsubfield(new subfield("payroll"));
+		dep1.addsubfield(new subfield("finance"));
 		Departments dep2 =new IT();
-		dep2.addsubfield(new subfield("subfield 1"));
-		dep2.addsubfield(new subfield("subfield 2"));
-		dep2.addsubfield(new subfield("subfield 3"));
+		dep2.addsubfield(new subfield("Java"));
+		dep2.addsubfield(new subfield(".net"));
+		dep2.addsubfield(new subfield("Python"));
 		Departments dep3 =new ITES();
-		dep3.addsubfield(new subfield("subfield 1"));
-		dep3.addsubfield(new subfield("subfield 2"));
-		dep3.addsubfield(new subfield("subfield 3"));
+		dep3.addsubfield(new subfield("devops"));
+		dep3.addsubfield(new subfield("support"));
+		dep3.addsubfield(new subfield("CSR"));
 		
 		departments.add(dep1);
 		departments.add(dep2);
